@@ -1,2 +1,2 @@
 # Paintball-Co-op
-Diploma project
+Diploma project(Fitbit : Games)
