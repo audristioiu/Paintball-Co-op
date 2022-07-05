@@ -1,0 +1,31 @@
+<svg>
+  <defs>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="import" href="/mnt/sysassets/system_widget.defs" />
+    
+    <!-- Necessary for the buttons -->
+    <link rel="import" href="/mnt/sysassets/widgets/text_button.defs" />
+    <link rel="import" href="/mnt/sysassets/widgets/icon_button.defs" />
+    <link rel="import" href="/mnt/sysassets/system_widget.defs" />
+    
+    <link rel="import" href="/mnt/sysassets/widgets/baseview_widget.defs" />
+    <link rel="import" href="/mnt/sysassets/widgets/scrollbar.defs" />
+    <link rel="import" href="/mnt/sysassets/widgets/tile_list_widget.defs" />
+    
+    <!-- tile list -->
+    <symbol id="my-item" href="#tile-list-item" class="list-item" >
+      <rect class="bg3" />
+      <text id="text" />
+      <rect class="line" />
+      <rect id="touch" pointer-events="all" />
+    </symbol>
+    <!-- virtual tile list -->
+    <symbol id="my-item1" href="#tile-list-item" class="list-item" display="none">
+      <rect class="bg3" />
+      <text id="text" />
+      <rect class="line" />
+      <rect id="touch" pointer-events="all" />
+    </symbol>
+
+  </defs>
+</svg>

@@ -1,0 +1,130 @@
+<svg>
+   <image id="background1" width="75%" height="75%" x ="13%" href="paintball.png" />
+   <image id="background2" width="75%" height="75%" x ="13%" href="the-forest-map.png" />
+   <image id ="background3"  width="75%" height="75%" x ="13%" href="env.png" />
+   <!-- play button -->
+   <use id="button1" href="#icon-text-button" class="icon-text-button bottom application-fill" />
+  
+   <!-- cancel button -->
+   <use id="button2" href="#icon-text-button" class="icon-text-button bottom application-fill" />
+  
+  
+   <!-- main menu -->
+   <use id="myList" href="#tile-list" class="horizontal-pad">
+    <var id="separator-height-bottom" value="6" />
+    <use id="item1" href="#my-item">
+      <set href="#text" attributeName="text-buffer" to="Join Online Game" />
+    </use>
+    <use id="item2" href="#my-item">
+      <set href="#text" attributeName="text-buffer" to="Create Private Game" />
+    </use>
+    <use id="item3" href="#my-item">
+      <set href="#text" attributeName="text-buffer" to="Join Private Game" />
+    </use>
+    <use id="item4" href="#my-item">
+      <set href="#text" attributeName="text-buffer" to="Statistics" />
+    </use>
+    <use id="item5" href="#my-item">
+      <set href="#text" attributeName="text-buffer" to="Options" />
+    </use>
+    <use id="item6" href="#my-item">
+      <set href="#text" attributeName="text-buffer" to="Return" />
+    </use>
+  </use>
+  
+
+  <text id="text1" x="50%" y="20%"
+        font-family="System-Regular" fill="green"
+        font-size="30" font-weight="bold"
+        text-anchor="middle">Mobile Companion only</text>
+  <textarea id="text2" x="0%" y="20%"
+        font-family="System-Regular" fill="yellow"
+        font-size="30" font-weight="bold"
+        text-anchor="middle">Wait for teammate to choose</textarea>
+  <text id="text3" x="90%" y="90%"
+        font-family="System-Regular" fill="white"
+        font-size="30" font-weight="bold"
+        text-anchor="end">10</text>
+   <text id="text4" x="90%" y="90%"
+        font-family="System-Regular" fill="white"
+        font-size="30" font-weight="bold"
+        text-anchor="end">Team 1 Wins</text>
+   <text id="text5" x="90%" y="90%"
+        font-family="System-Regular" fill="white"
+        font-size="30" font-weight="bold"
+        text-anchor="end">Team 2 Wins</text> 
+  
+  <!-- players shown on map -->
+  <circle id="bot1" cx="28%" cy="57%" r="8" fill="red" />
+  <circle id="bot2" cx="38%" cy="55%" r="8" fill="red" />
+  <circle id="bot3" cx="50%" cy="57%" r="8" fill="white" />
+  <circle id="bot4" cx="61%" cy="53%" r="8" fill="white" />
+  
+  <!-- target locked -->
+  <circle id ="target" cx="61%" cy="53%" r="8" fill="green" />
+  
+  <!-- virtual tile list used for list of private games(MAX 100) -->
+  <use id="myListGames" href="#tile-list">
+    <var id="virtual" value="1" />
+    <var id="reorder-enabled" value="0"/>
+    <var id="peek-enabled" value="0"/>
+    <var id="separator-height-bottom" value="2" />
+
+    <use id="my-pool" href="#tile-list-pool">
+      <use id="my-pool[0]" href="#my-item1" />
+      <use id="my-pool[1]" href="#my-item1" />
+      <use id="my-pool[2]" href="#my-item1" />
+      <use id="my-pool[3]" href="#my-item1" />
+      <use id="my-pool[4]" href="#my-item1" />
+      <use id="my-pool[5]" href="#my-item1" />
+      <use id="my-pool[6]" href="#my-item1" />
+      <use id="my-pool[7]" href="#my-item1" />
+      <use id="my-pool[8]" href="#my-item1" />
+      <use id="my-pool[9]" href="#my-item1" />
+      <use id="my-pool[10]" href="#my-item1" />
+      <use id="my-pool[11]" href="#my-item1" />
+      <use id="my-pool[12]" href="#my-item1" />
+      <use id="my-pool[13]" href="#my-item1" />
+      <use id="my-pool[14]" href="#my-item1" />
+      <use id="my-pool[15]" href="#my-item1" />
+    </use>
+  </use>
+    
+    <!-- used to measure time spent in app -->
+    <text id="clock-label" x="50%" y="50%+15"
+      fill="black" font-size="32" font-family="System-Regular"
+      text-anchor="middle" text-length="20">00:00:00</text>
+      
+   <!-- images for main gameplay(character + ammo for each player) -->
+   <symbol id="demo">
+     <g id="demogroup">
+      <animateTransform attributeType="translate"
+      from="-70" to="330" begin="enable" dur="4" repeatDur="2" repeatCount="indefinite" />
+      <animateTransform attributeType="translate"
+      to="-70" from="330" begin="enable" dur="4" repeatDur="2" repeatCount="indefinite"/>
+      <image id="character" x="80" y="100" width="150" height="150" href="character.png" pointer-events="all"/>
+     </g>
+    </symbol>
+   <image id ="bullet"  x="60" y ="100" height="50" width="50" href="bullet.png"/>
+   <image id ="bullet1"  x="60" y ="100" height="50" width="50" href="bullet.png"/>
+   <image id ="bullet2"  x="60" y ="100" height="50" width="50" href="bullet.png"/>
+   <image id ="bullet3"  x="60" y ="100" height="50" width="50"href="bullet.png"/>
+   <image id ="bullet4"  x="60" y ="100" height="50" width="50" href="bullet.png"/>
+   <image id ="bullet5"  x="60" y ="100" height="50" width="50" href="bullet.png"/>
+   <image id ="bullet6"  x="60" y ="100" height="50" width="50" href="bullet.png"/>
+   <image id ="bullet7"  x="60" y ="100" height="50" width="50" href="bullet.png"/>
+   <image id ="bullet8"  x="60" y ="100" height="50" width="50" href="bullet.png"/>
+   <image id ="bullet9"  x="60" y ="100" height="50" width="50" href="bullet.png"/>
+  
+  <!-- alert box when room is full  width ="60" height="60"-->
+  <svg id="grp">
+    <rect id="roomBox" x = "100" y = "150" width ="160" height="40" fill="white" />
+    <animate attributeName="opacity" begin="enable" from="0" to="1" dur="3" end="disable" />
+    <text id ="txt4" fill="red" x="55%" y="55%" text-anchor="middle" font-family="System-Regular">Room Full!</text>
+  </svg>
+  <svg width="100%" height="100%">
+    <use id="demoinstance" href="#demo" width="100%" height="100%" />
+  </svg>
+        
+    
+</svg>

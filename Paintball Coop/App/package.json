@@ -1,0 +1,54 @@
+{
+  "devDependencies": {
+    "@fitbit/sdk": "~6.1.0"
+  },
+  "fitbit": {
+    "appUUID": "dd17adca-14b1-48a7-aeef-232675b25909",
+    "appType": "app",
+    "appDisplayName": "Paintball Coop",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#2196f3",
+    "requestedPermissions": [
+      "access_activity",
+      "access_user_profile",
+      "access_heart_rate",
+      "access_location",
+      "access_internet",
+      "run_background",
+      "access_exercise",
+      "access_calendar",
+      "access_sleep"
+    ],
+    "buildTargets": [
+      "vulcan",
+      "atlas"
+    ],
+    "i18n": {
+      "en-US": {
+        "name": "Paintball Coop"
+      },
+      "ro-RO": {
+        "name": "Paintball Coop"
+      },
+      "de-DE": {
+        "name": "Paintball Coop"
+      },
+      "es-ES": {
+        "name": "Paintball Coop"
+      },
+      "fr-FR": {
+        "name": "Paintball Coop"
+      },
+      "it-IT": {
+        "name": "Paintball Coop"
+      },
+      "nl-NL": {
+        "name": "Paintball Coop"
+      },
+      "sv-SE": {
+        "name": "Paintball Coop"
+      }
+    },
+    "defaultLanguage": "en-US"
+  }
+}
